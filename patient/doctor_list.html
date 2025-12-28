@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Doctors</title>
+    <link rel="stylesheet" href="../static/css/patient/headerr.css">
+  <link rel="stylesheet" href="../static/css/patient/footerr.css">
+  <link rel="stylesheet" href="../static/css/patient/doctor_lists.css">
+</head>
+<body>
+
+{% include 'templates/patient/header.html' %}
+
+<!-- Background Wrapper -->
+<div class="bg-wrapper">
+    <div class="content-wrapper">
+
+        <h1 class="page-title">Our Expert Doctors</h1>
+
+        <div class="doctor-container">
+            {% for doctor in doctors %}
+            <div class="doctor-card">
+                <div class="doctor-image">
+                    <img src="{{ doctor.photo.url }}" alt="{{ doctor.name }}">
+                </div>
+
+                <div class="doctor-info">
+                    <h2>{{ doctor.name }}</h2>
+                    <p><strong>Qualification:</strong> {{ doctor.qualifications }}</p>
+                    <p><strong>Experience:</strong> {{ doctor.experience }} Years</p>
+                    <p><strong>Phone:</strong> {{ doctor.phone_no }}</p>
+                    <p><strong>Specialization:</strong> {{doctor.specialization}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+{% include 'templates/patient/footer.html' %}
+
+</body>
+</html>

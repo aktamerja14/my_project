@@ -1,0 +1,15 @@
+<html>
+<header class="main-header">
+<div class="header-container">
+  <link rel="stylesheet" href="../static/css/patient/headerr.css">
+  <div class="logo">LifeCare Hospital</div>
+  <nav class="link">
+    <a href="{% url 'patient_introduction' %}">Introduction</a>
+    <a href="{% url 'patient_services' %}">Services</a>
+    <a href="{% url 'doctor_list' %}">Doctors</a>
+    <a href="{% url 'book' %}">Book Appointment</a>
+    <a href="{% url 'patient_login' %}" class="logout-btn">Logout</a>
+  </nav>
+</div>
+</header>
+</html>

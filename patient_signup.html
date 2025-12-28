@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Signup</title>
+    <link rel="stylesheet" href="{% static 'css/patient_login.css' %}">
+</head>
+<body>
+
+<div class="hero">
+
+    <!-- Background -->
+    <div class="bg"></div>
+
+    <!-- Signup box -->
+    <div class="login-box">
+        <h2>Patient Sign Up</h2>
+        <p>Create your account</p>
+
+        <form method="post">
+            {% csrf_token %}
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <input type="password" name="password" placeholder="Password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        {% if messages %}
+        {% for message in messages %}
+            {% if message.tags == 'error' %}
+                <p style="color:red;">{{ message }}</p>
+            {% endif %}
+        {% endfor %}
+        {% endif %}
+
+        <a href="/" class="back">← Back to Home</a>
+        <a href="{% url 'patient_login' %}" class="back">Already have an account? Login</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

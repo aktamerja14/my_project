@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="../static/css/patient/headerr.css">
+  <link rel="stylesheet" href="../static/css/patient/footerr.css">
+  <link rel="stylesheet" href="../static/css/patient/servicess.css">
+
+</head>
+<body>
+
+{% include 'templates/patient/header.html' %}
+
+
+<section class="services-section">
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h2 class="section-title">Our Medical Services</h2>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h3>Cardiology</h3>
+                <p>Advanced heart care with modern technology.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-brain"></i>
+                <h3>Neurology</h3>
+                <p>Expert treatment for brain & nervous system.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-bone"></i>
+                <h3>Orthopedics</h3>
+                <p>Bone, joint and spine care solutions.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-baby"></i>
+                <h3>Pediatrics</h3>
+                <p>Compassionate child healthcare services.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-truck-medical"></i>
+                <h3>Emergency</h3>
+                <p>24/7 emergency and trauma care unit.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-pills"></i>
+                <h3>Pharmacy</h3>
+                <p>In-house pharmacy with genuine medicines.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% include 'templates/patient/footer.html' %}
+
+</body>
+</html>

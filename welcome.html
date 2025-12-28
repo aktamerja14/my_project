@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome | Hospital Management</title>
+    <link rel="stylesheet" href="/static/css/welcomes.css">
+</head>
+<body>
+
+<div class="hero">
+
+    <!-- Blur background -->
+    <div class="bg"></div>
+
+    <!-- Content -->
+        <div class="content">
+            <h1>Welcome to LifeCare Hospital's Website</h1>
+            <p>Medical Services That You Can Trust</p>
+
+            <h2>Who are you?</h2>
+
+            <div class="buttons">
+                <a href="/admin" class="btn admin">Admin</a>
+                <a href="{% url "patient_login" %}" class="btn patient">Patient</a>
+                <a href="{% url "doctor_login" %}" class="btn doctor">Doctor</a>  
+                <a href="{% url "medical_login" %}" class="btn Medical_staff">Medical staff</a>
+                <a href="{% url "receptionist_login" %}" class="btn Receptionist">Receptionist</a>
+
+            </div>
+        </div>
+    
+
+</div>
+
+</body>
+</html>

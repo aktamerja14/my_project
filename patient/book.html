@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+
+    <link rel="stylesheet" href="../static/css/patient/headerr.css">
+    <link rel="stylesheet" href="../static/css/patient/footerr.css">
+    <link rel="stylesheet" href="../static/css/patient/book.css">
+</head>
+<body>
+
+<!-- header include -->
+{% include 'templates/patient/header.html' %}
+
+<section class="appointment-section">
+    <div class="overlay"></div>
+
+    <div class="appointment-container">
+        <h2>Book Appointment</h2>
+
+        <form method="post">
+            {% csrf_token %}
+
+            <div class="form-row">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+            </div>
+
+            <div class="form-row">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="number" name="age" placeholder="Age" required>
+            </div>
+
+            <div class="form-row">
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <select name="doctor" required>
+                    <option value="">Select Doctor</option>
+                    {% for doctor in doctors %}
+                    <option>{{ doctor.name}}:{{doctor.specialization}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">Book Appointment</button>
+        </form>
+    </div>
+</section>
+
+<!-- footer include -->
+{% include 'templates/patient/footer.html' %}
+
+</body>
+</html>

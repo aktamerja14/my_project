@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="../static/css/patient/headerr.css">
+  <link rel="stylesheet" href="../static/css/patient/footerr.css">
+  <link rel="stylesheet" href="../static/css/patient/introduction.css">
+</head>
+<body>
+
+{% include 'templates/patient/header.html' %}
+
+<section class="hero">
+  <div class="hero-bg"></div>   <!-- background + blur -->
+  
+  <div class="hero-content">
+    <h1>Welcome to LifeCare Hospital</h1>
+    <p>
+      A Multi-Speciality Hospital serving patients with compassion,
+      advanced technology and expert doctors for more than 15 years.
+    </p>
+    <a href="#" class="btn">Book Appointment</a>
+  </div>
+</section>
+
+<section class="introduction">
+  <h2>Hospital Introduction</h2>
+  <p>
+    LifeCare Hospital is a NABH-accredited multi-speciality hospital
+    located in Ahmedabad. We provide 24x7 emergency services,
+    advanced ICU facilities, and specialized care in Cardiology,
+    Orthopedics, Neurology, Pediatrics, and General Surgery.
+  </p>
+</section>
+
+
+{% include 'templates/patient/footer.html' %}
+
+</body>
+</html>
+

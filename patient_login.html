@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Login</title>
+    <link rel="stylesheet" href="/static/css/patient_login.css">
+</head>
+<body>
+
+<div class="hero">
+
+    <!-- Background -->
+    <div class="bg"></div>
+
+    <!-- Login box -->
+    <div class="login-box">
+        <h2>Patient Login</h2>
+        <p>Please login to continue</p>
+
+        <form method="post">
+            {% csrf_token %}
+
+            <input type="email" name="username" placeholder="Patient Email" required>
+
+            <input type="password" name="password" placeholder="Password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        {% for message in messages %}
+            <!--<p>TAG: {{ message.tags }}</p>-->
+            <p style="color:red";>{{ message }}</p>
+        {% endfor %}
+
+        <a href="/" class="back">← Back to Home</a>
+        <a href="{% url "patient_signup" %}" class="back">Create New Account</a>
+    </div>
+</div>
+</body>
+</html>
