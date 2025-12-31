@@ -1,0 +1,83 @@
+* {
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+
+body {
+margin: 0;
+height: 100vh;
+overflow: hidden;
+}
+
+
+.background {
+position: absolute;
+    inset: 0;
+
+    background-image: url("/static/images/patient_login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(8px);
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+
+.auth-box {
+width: 380px;
+background: rgba(20, 60, 110, 0.95);
+padding: 30px;
+border-radius: 14px;
+text-align: center;
+color: #fff;
+box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.auth-box p {
+font-size: 14px;
+margin-bottom: 22px;
+opacity: 0.9;
+}
+
+
+.auth-box input {
+width: 100%;
+padding: 12px;
+margin-bottom: 15px;
+border-radius: 6px;
+border: none;
+}
+
+
+.auth-box button {
+width: 100%;
+padding: 12px;
+background: #3aa0df;
+border: none;
+border-radius: 6px;
+font-size: 16px;
+color: #fff;
+cursor: pointer;
+}
+
+
+.links {
+margin-top: 18px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+
+.links a {
+color: #cfe7ff;
+text-decoration: none;
+font-size: 14px;
+}

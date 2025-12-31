@@ -1,0 +1,102 @@
+body{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* background image */
+.hero-bg {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/static/images/patient.jpg");
+  background-size: cover;
+  background-position: center;
+  
+  z-index: 1;
+}
+
+/* content stays clear */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 180px;
+  color: #0b3c6d;
+
+  
+  
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+.hero-content p {
+  width: 60%;
+  margin: 20px auto;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: rgba(0, 40, 90, 0.85);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.btn:hover{
+  border-radius: 50px;
+  box-shadow: 0 15px 35px rgba(59, 104, 160, 0.85);
+  transform: translateY(-3px);
+}
+
+.introduction {
+  padding: 80px 15%;
+  background: #ffffff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.introduction h2 {
+  color: rgba(0, 40, 90, 0.85);
+  margin-bottom: 20px;
+}
+
+.hero-content {
+  opacity: 0;
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
