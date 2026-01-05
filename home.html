@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LifeCare Hospital</title>
+<link rel="stylesheet" href="/static/css/home.css">
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>LifeCare Hospital</h1>
+    <p class="tagline">Your Health, Our Responsibility</p>
+
+    <p class="hero-text">
+      A trusted multi-specialty hospital delivering quality healthcare
+      services with compassion, innovation, and excellence.
+    </p>
+
+    <a href="{% url "patient_login" %}" class="btn-primary">
+      Continue to Login
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section light">
+  <h2>About LifeCare Hospital</h2>
+  <p>
+    LifeCare Hospital is a modern healthcare institution dedicated to providing
+    comprehensive medical services under one roof. With advanced infrastructure,
+    experienced doctors, and patient-first care, we ensure the highest standards
+    of medical treatment.
+  </p>
+
+  <p>
+    Our hospital combines cutting-edge technology with compassionate care,
+    offering reliable diagnosis, effective treatment, and continuous support
+    to patients and their families.
+  </p>
+</section>
+
+<!-- MISSION & VISION -->
+<section class="section dark">
+  <div class="grid">
+    <div>
+      <h3>Our Mission</h3>
+      <p>
+        To deliver affordable, accessible, and quality healthcare services
+        while maintaining integrity, empathy, and excellence.
+      </p>
+    </div>
+    <div>
+      <h3>Our Vision</h3>
+      <p>
+        To be a leading healthcare provider recognized for clinical excellence,
+        patient satisfaction, and continuous innovation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section light">
+  <h2>Our Medical Services</h2>
+
+  <div class="services">
+    <div class="card">General Medicine</div>
+    <div class="card">Cardiology</div>
+    <div class="card">Dermatology</div>
+    <div class="card">Orthopedics</div>
+    <div class="card">Neurology</div>
+    <div class="card">Gynecology</div>
+    <div class="card">Emergency Care</div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section dark">
+  <h2>Why Choose LifeCare Hospital?</h2>
+
+  <ul class="reasons">
+    <li>✔ 24/7 Emergency & Critical Care Services</li>
+    <li>✔ Highly Qualified & Experienced Doctors</li>
+    <li>✔ Advanced Diagnostic & Treatment Facilities</li>
+    <li>✔ Patient-Centered Care Approach</li>
+    <li>✔ Safe, Hygienic & Comfortable Environment</li>
+  </ul>
+</section>
+
+<!-- STATS -->
+<section class="section light stats">
+  <div>
+    <h3>50+</h3>
+    <p>Expert Doctors</p>
+  </div>
+  <div>
+    <h3>20+</h3>
+    <p>Departments</p>
+  </div>
+  <div>
+    <h3>24/7</h3>
+    <p>Emergency Support</p>
+  </div>
+  <div>
+    <h3>10k+</h3>
+    <p>Happy Patients</p>
+  </div>
+</section>
+
+<!-- PATIENT REVIEWS -->
+<section class="section light">
+  <h2>What Our Patients Say</h2>
+  <p class="section-subtitle">
+    Real experiences from patients who trusted LifeCare Hospital
+  </p>
+
+  <div class="reviews">
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">
+        Excellent service and very caring doctors. The staff was supportive
+        throughout the treatment.
+      </p>
+      <h4>- Ramesh Patel</h4>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★☆</div>
+      <p class="review-text">
+        Clean hospital with modern facilities. Emergency response was very quick.
+      </p>
+      <h4>- Neha Shah</h4>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">
+        Best hospital experience so far. Doctors explained everything clearly.
+      </p>
+      <h4>- Amit Verma</h4>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FINAL CTA -->
+<section class="cta">
+  <h2>Your Health Matters to Us</h2>
+  <p>
+    Please login to book appointments, manage records,
+    and access personalized healthcare services.
+  </p>
+
+  <a href="{% url "patient_login" %}" class="btn-primary">
+    Proceed to Login
+  </a>
+</section>
+
+</body>
+</html>
+
+
